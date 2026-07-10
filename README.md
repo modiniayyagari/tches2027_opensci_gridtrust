@@ -200,9 +200,8 @@ The control recording is stored under `exp_inputs/FPGA/EM_TRACES/SAKU/ON_OFF_ON/
 - 50-120 s: FPGA supply physically disconnected from the AC mains source.
 - 120-200 s: FPGA supply reconnected.
 
-The sensing probe and acquisition setup remain unchanged during the full recording. When analyzed with the pair-wise script, the two ON intervals show strong ENF agreement with the AC mains reference, while the middle OFF interval drops toward the baseline ambient EM behavior from Experiment 1. This control experiment is part of Experiment 2 and should be treated alongside the other FPGA ambient EM and FPGA power-rail measurements.
+The sensing probe and acquisition setup remain unchanged during the full recording. When analyzed with the pair-wise script, the two ON intervals show strong ENF agreement with the AC mains reference, while the middle OFF interval drops toward the baseline ambient EM behavior from Experiment 1. This control experiment is part of Experiment 2 and should be treated alongside the other FPGA ambient EM and FPGA power-rail measurements. A companion PDF, `enf_based_chip_geolocation_additional_experiment_artifacts.pdf`, is included at the top level of the artifact package and contains the supplementary visual artifacts associated with this additional control experiment.
 
-A companion PDF, `enf_based_chip_geolocation_additional_experiment_artifacts.pdf`, is included at the top level of the artifact package and contains the supplementary visual artifacts associated with this additional control experiment.
 ---
 
 ### 3.2 Experiment 3 – ENF Temporal Reliability and Replay Resilience
@@ -399,7 +398,7 @@ No additional toolboxes are required beyond what the top-level scripts are alrea
 2. **Open MATLAB** and set the current folder to the repository root:
 
    ```matlab
-   cd('PATH/TO/tches2027_opensci_gridtrust');
+   cd('PATH/TO/tches2027_enfchipgeoloc');
    ```
 
 3. **Run scripts from the `exp_scripts/` directory**:
